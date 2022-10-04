@@ -17,6 +17,7 @@
 		FA026BE728ECCAC500EA9429 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA026BE628ECCAC500EA9429 /* HomeProtocols.swift */; };
 		FA026BE928ECCE3600EA9429 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA026BE828ECCE3600EA9429 /* HomeInteractor.swift */; };
 		FA026BEB28ECCE8500EA9429 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA026BEA28ECCE8500EA9429 /* HomePresenter.swift */; };
+		FA026BEE28ECD05600EA9429 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA026BED28ECD05600EA9429 /* HomeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FA026BE628ECCAC500EA9429 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		FA026BE828ECCE3600EA9429 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		FA026BEA28ECCE8500EA9429 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		FA026BED28ECD05600EA9429 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		FA026BDA28EC6CBB00EA9429 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FA026BEC28ECD04500EA9429 /* router */,
 				FA026BDE28EC6CDB00EA9429 /* protocols */,
 				FA026BDD28EC6CD400EA9429 /* interactor */,
 				FA026BDC28EC6CC700EA9429 /* presenter */,
@@ -133,6 +136,14 @@
 				FA026BE428ECBC6F00EA9429 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA026BEC28ECD04500EA9429 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				FA026BED28ECD05600EA9429 /* HomeRouter.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 				FA026BE728ECCAC500EA9429 /* HomeProtocols.swift in Sources */,
 				FA026BC628EC67E000EA9429 /* AppDelegate.swift in Sources */,
 				FA026BE928ECCE3600EA9429 /* HomeInteractor.swift in Sources */,
+				FA026BEE28ECD05600EA9429 /* HomeRouter.swift in Sources */,
 				FA026BC828EC67E000EA9429 /* SceneDelegate.swift in Sources */,
 				FA026BE028EC6D0C00EA9429 /* HomeViewController.swift in Sources */,
 			);
