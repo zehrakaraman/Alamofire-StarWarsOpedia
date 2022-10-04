@@ -11,10 +11,10 @@ class HomePresenter: ViewToPresenterHomeProtocol {
     
     var interactor: PresenterToInteractorHomeProtocol?
     
-    var view: PresenterToViewHomeProtocol?
+//    var view: PresenterToViewHomeProtocol?
     
     func loadFilms() {
-        
+        interactor?.loadData()
     }
     
 }

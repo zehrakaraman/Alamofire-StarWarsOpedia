@@ -10,6 +10,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
+    
+    var presenterObject: ViewToPresenterHomeProtocol?
 
     @IBOutlet weak var filmsListTableView: UITableView!
     
@@ -21,6 +23,9 @@ class HomeViewController: UIViewController {
         searchController.searchBar.placeholder = ""
         navigationItem.searchController = searchController
         definesPresentationContext = true
+        
+        HomeRouter.createModule(ref: self)
+        presenterObject?.loadFilms()
     }
     
     override func viewWillAppear(_ animated: Bool) {

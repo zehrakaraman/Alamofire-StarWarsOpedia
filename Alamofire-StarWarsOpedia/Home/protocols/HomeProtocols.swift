@@ -10,24 +10,24 @@ import Foundation
 // Main protocols
 protocol ViewToPresenterHomeProtocol {
     var interactor: PresenterToInteractorHomeProtocol? { get set }
-    var view: PresenterToViewHomeProtocol? { get set }
+//    var view: PresenterToViewHomeProtocol? { get set }
     
     func loadFilms()
 }
 
 protocol PresenterToInteractorHomeProtocol {
-    var presenter: InteractorToPresenterHomeProtocol? { get set }
+//    var presenter: InteractorToPresenterHomeProtocol? { get set }
     
     func loadData()
 }
 
 // Carrier protocols
 protocol InteractorToPresenterHomeProtocol {
-    func sendDataToPresenter(films: [String])
+    func sendDataToPresenter(films: [Any])
 }
 
 protocol PresenterToViewHomeProtocol {
-    func sendDataToView(films: [String])
+    func sendDataToView(films: [Any])
 }
 
 // Router protocol
